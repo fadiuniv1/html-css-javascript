@@ -177,3 +177,21 @@ footer {
     .left-aside { order: 2; } 
     .right-aside { order: 3; }
 }
+
+
+
+
+
+
+
+
+
+
+#formDataOutput p {
+    margin-bottom: 5px;
+    padding: 10px;
+    /* Remove background: #fff; */
+    background: rgba(128, 128, 128, 0.1); /* This adds a very slight tint that works on both themes */
+    border-left: 4px solid #4a6fa5;
+    border-radius: 4px;
+}
