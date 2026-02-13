@@ -1,52 +1,65 @@
-// --- FORM HANDLING SECTION ---
-
-// --- DARK MODE SECTION ---
-// Get the button by its ID
+/* --- dark mode toggle (now using class only) --- */
 const toggleBtn = document.getElementById('darkToggle');
 
-toggleBtn.addEventListener('click', function() {
-    // Check if the current background is dark
-    if (document.body.style.backgroundColor === 'rgb(30, 30, 30)') {
-        // Change back to Light Mode colors
-        document.body.style.backgroundColor = '#f4f4f4';
-        document.body.style.color = '#000000';
-        toggleBtn.textContent = "Switch to Dark Mode";
+toggleBtn.addEventListener('click', () => {
+    // just flip the class on body
+    document.body.classList.toggle('dark-mode');
+
+    // update button text
+    if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = 'Light Mode';
     } else {
-        // Change to Dark Mode colors
-        document.body.style.backgroundColor = '#1e1e1e';
-        document.body.style.color = '#f1f1f1';
-        toggleBtn.textContent = "Switch to Light Mode";
+        toggleBtn.textContent = 'Dark Mode';
     }
 });
-// 1. Get references to the form and the display area
+
+
+/* --- form handling (same logic, just cleaned notes) --- */
+
+// get form + output area
 const myForm = document.getElementById('projectForm');
 const displayArea = document.getElementById('formDataOutput');
 
-// 2. Listen for the submit event
-myForm.addEventListener('submit', function(event) {
-    // Stop the page from refreshing 
-    event.preventDefault();
+// only run form logic if the form exists (so index/gallery don't error)
+if (myForm) {
 
-    // 3. Collect the data from the 5 inputs
-    const name = document.getElementById('userName').value;
-    const email = document.getElementById('userEmail').value;
-    const date = document.getElementById('userDate').value;
-    const experience = document.getElementById('userExperience').value;
-    const updates = document.getElementById('userUpdates').checked ? "Yes" : "No";
+    myForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // stop refresh
 
-    // 4. Create the HTML string to show the data 
-    const resultHTML = `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Birthday:</strong> ${date}</p>
-        <p><strong>Experience:</strong> ${experience} years</p>
-        <p><strong>Newsletter:</strong> ${updates}</p>
-    `;
+        // collect inputs
+        const name = document.getElementById('userName').value;
+        const email = document.getElementById('userEmail').value;
+        const date = document.getElementById('userDate').value;
+        const experience = document.getElementById('userExperience').value;
+        const updates = document.getElementById('userUpdates').checked ? "Yes" : "No";
 
-    // 5. Inject the data into the page dynamically 
-    displayArea.innerHTML = resultHTML;
-    
-    // Optional: clear the form after submission
-    myForm.reset();
-});
+        // clear old output
+        displayArea.innerHTML = "";
 
+        // create new elements
+        const pName = document.createElement("p");
+        pName.innerHTML = `<strong>Name:</strong> ${name}`;
+
+        const pEmail = document.createElement("p");
+        pEmail.innerHTML = `<strong>Email:</strong> ${email}`;
+
+        const pDate = document.createElement("p");
+        pDate.innerHTML = `<strong>Birthday:</strong> ${date}`;
+
+        const pExperience = document.createElement("p");
+        pExperience.innerHTML = `<strong>Experience:</strong> ${experience} years`;
+
+        const pUpdates = document.createElement("p");
+        pUpdates.innerHTML = `<strong>Newsletter:</strong> ${updates}`;
+
+        // add them to the page
+        displayArea.appendChild(pName);
+        displayArea.appendChild(pEmail);
+        displayArea.appendChild(pDate);
+        displayArea.appendChild(pExperience);
+        displayArea.appendChild(pUpdates);
+
+        // reset form
+        myForm.reset();
+    });
+}

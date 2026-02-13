@@ -6,22 +6,27 @@
     <title>Fadi's Web Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- header area for site title + nav -->
 <header>
     <h1>Fadi's Web Project</h1>
     <p>HTML5 + CSS Responsive Layout Demo</p>
+
+    <!-- main navigation for the 3 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="form.html">Contact</a>
+        <button id="darkToggle">Dark Mode</button>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="form.html">Contact</a>
-    <button id="darkToggle">Dark Mode</button>
-
-</nav>
-
+<!-- main layout container (holy grail: left aside + main + right aside) -->
 <div class="container">
+
+    <!-- left sidebar with categories -->
     <aside class="left-aside">
         <h3>Course Categories</h3>
         <ul>
@@ -31,14 +36,19 @@
             <li><a href="#ml">Machine Learning</a></li>
             <li><a href="#business">Digital Marketing</a></li>
         </ul>
-        <p style="margin-top:12px;font-size:0.95rem">Filter courses by category to find lessons, videos and projects.</p>
+        <p style="margin-top:12px;font-size:0.95rem">
+            Filter courses by category to find lessons, videos and projects.
+        </p>
     </aside>
 
+    <!-- main content area with course cards -->
     <main>
         <h2>Digital Courses</h2>
         <p>Explore practical, bite-sized digital courses designed for students: hands-on projects, video lessons, and quizzes.</p>
 
+        <!-- responsive grid for the course cards -->
         <section class="course-grid">
+
             <article class="course-card" id="web">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" alt="Web development course">
                 <h4>Web Development Basics</h4>
@@ -62,9 +72,11 @@
                 <h4>Machine Learning 101</h4>
                 <p>Intro to ML concepts and practical exercises.</p>
             </article>
+
         </section>
     </main>
-    
+
+    <!-- right sidebar with extra links -->
     <aside class="right-aside">
         <div class="aside-actions">
             <a class="button" href="gallery.html">Open Gallery</a>
@@ -77,16 +89,20 @@
             <li><a href="#">Forums</a></li>
         </ul>
     </aside>
+
 </div>
 
+<!-- footer for credits -->
 <footer>
     <p>Created by Fadi — 2025</p>
 </footer>
 
+<!-- small slide-in message for user -->
 <div class="slide-message">
     Thanks for visiting! This message will slide in and fade out.
 </div>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
