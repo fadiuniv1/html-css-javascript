@@ -3,106 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadi's Web Project</title>
+    <title>Courses</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- header area for site title + nav -->
 <header>
-    <h1>Fadi's Web Project</h1>
-    <p>HTML5 + CSS Responsive Layout Demo</p>
+    <h1>Our Courses</h1>
+    <p>Browse and choose the course you want to learn.</p>
 
-    <!-- main navigation for the 3 pages -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="form.html">Contact</a>
+        <a href="index.html">Courses</a>
+        <a href="gallery.html">Media</a>
+        <a href="form.html">Apply</a>
         <button id="darkToggle">Dark Mode</button>
     </nav>
 </header>
 
-<!-- main layout container (holy grail: left aside + main + right aside) -->
 <div class="container">
 
-    <!-- left sidebar with categories -->
     <aside class="left-aside">
-        <h3>Course Categories</h3>
+        <h3>Categories</h3>
         <ul>
             <li><a href="#web">Web Development</a></li>
             <li><a href="#data">Data Science</a></li>
             <li><a href="#design">UI / UX Design</a></li>
             <li><a href="#ml">Machine Learning</a></li>
-            <li><a href="#business">Digital Marketing</a></li>
         </ul>
-        <p style="margin-top:12px;font-size:0.95rem">
-            Filter courses by category to find lessons, videos and projects.
-        </p>
     </aside>
 
-    <!-- main content area with course cards -->
     <main>
-        <h2>Digital Courses</h2>
-        <p>Explore practical, bite-sized digital courses designed for students: hands-on projects, video lessons, and quizzes.</p>
+        <h2>Available Courses</h2>
+        <p>Select a course and apply to join.</p>
 
-        <!-- responsive grid for the course cards -->
         <section class="course-grid">
 
             <article class="course-card" id="web">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" alt="Web development course">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" alt="">
                 <h4>Web Development Basics</h4>
-                <p>HTML, CSS, and JavaScript fundamentals — build real projects.</p>
+                <p>Learn HTML, CSS, and JavaScript from scratch.</p>
+                <p><strong>Price:</strong> $29</p>
+                <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
             <article class="course-card" id="data">
-                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=format&fit=crop&w=800&q=60" alt="Data science course">
+                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="">
                 <h4>Data Science Intro</h4>
-                <p>Python, pandas and data visualization for beginners.</p>
+                <p>Start working with Python and data tools.</p>
+                <p><strong>Price:</strong> $39</p>
+                <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
             <article class="course-card" id="design">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60" alt="Design course">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60" alt="">
                 <h4>UI / UX Design</h4>
-                <p>Design thinking, layout, and prototyping basics.</p>
+                <p>Learn design thinking and prototyping.</p>
+                <p><strong>Price:</strong> $35</p>
+                <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
             <article class="course-card" id="ml">
-                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=60" alt="Machine learning course">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=60" alt="">
                 <h4>Machine Learning 101</h4>
-                <p>Intro to ML concepts and practical exercises.</p>
+                <p>Understand ML basics and hands‑on exercises.</p>
+                <p><strong>Price:</strong> $45</p>
+                <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
         </section>
     </main>
 
-    <!-- right sidebar with extra links -->
     <aside class="right-aside">
-        <div class="aside-actions">
-            <a class="button" href="gallery.html">Open Gallery</a>
-        </div>
-        <h3>Instructor Notes</h3>
-        <p>Browse course modules, schedules and assignments.</p>
-        <ul>
-            <li><a href="#">Module list</a></li>
-            <li><a href="#">Assignments</a></li>
-            <li><a href="#">Forums</a></li>
-        </ul>
+        <h3>Why Choose Us?</h3>
+        <p>Practical lessons, real projects, and beginner‑friendly content.</p>
     </aside>
 
 </div>
 
-<!-- footer for credits -->
 <footer>
-    <p>Created by Fadi — 2025</p>
+    <p>LearnHub - Fadi Abu Saleh — 2026</p>
 </footer>
 
-<!-- small slide-in message for user -->
-<div class="slide-message">
-    Thanks for visiting! This message will slide in and fade out.
-</div>
-
 <script src="script.js"></script>
-
 </body>
 </html>

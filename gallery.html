@@ -3,75 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Gallery</title>
+    <title>Course Media</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- header for page title + navigation -->
 <header>
-    <h1>Media Gallery</h1>
+    <h1>Course Media</h1>
+    <p>Preview images, videos, and audio from our courses.</p>
 
-    <!-- nav for switching between pages -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="form.html">Contact</a>
+        <a href="index.html">Courses</a>
+        <a href="gallery.html">Media</a>
+        <a href="form.html">Apply</a>
         <button id="darkToggle">Dark Mode</button>
     </nav>
 </header>
 
-<!-- main area that holds the gallery -->
 <main>
-
-    <!-- grid container for all media items -->
     <section class="media-grid">
 
-        <!-- gallery item: image + title + desc -->
         <div class="media-item">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" alt="Web course">
-            <h3>Web Development</h3>
-            <p>Intro image for the web dev course.</p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60">
+            <h3>Web Dev Preview</h3>
+            <p>Intro image from the web dev course.</p>
         </div>
 
-        <!-- gallery item: image -->
         <div class="media-item">
-            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Data course">
-            <h3>Data Science</h3>
-            <p>Data analysis and visualization basics.</p>
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg">
+            <h3>Data Science Preview</h3>
+            <p>Data tools and analysis basics.</p>
         </div>
 
-        <!-- gallery item: image -->
         <div class="media-item">
-            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60" alt="Design course">
-            <h3>UI / UX Design</h3>
-            <p>Design thinking and layout principles.</p>
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60">
+            <h3>Design Preview</h3>
+            <p>UI / UX sketches and layouts.</p>
         </div>
 
-        <!-- gallery item: image -->
         <div class="media-item">
-            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=60" alt="ML course">
-            <h3>Machine Learning</h3>
-            <p>Basic intro to ML concepts.</p>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+            </video>
+            <h3>ML Video</h3>
+            <p>Short intro video about machine learning.</p>
         </div>
 
-        <!-- gallery item: audio example -->
         <div class="media-item">
             <audio controls>
-                <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
+                <source src="demo-music.mp3" type="audio/mpeg">
             </audio>
-            <h3>Sample Audio</h3>
-            <p>Short audio clip for the media requirement.</p>
-        </div>
-
-        <!-- gallery item: video example -->
-        <div class="media-item">
-            <video controls width="100%">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            </video>
-            <h3>Sample Video</h3>
-            <p>Small demo video to complete the media types.</p>
+            <h3>Music Sample clip</h3>
+            <p>Example audio clip used in lessons.</p>
+            <a href="https://pixabay.com/music/beats-vlog-hip-hop-483574/">link of the audio </a>
+            <p>from pixabay website to show all media stuff like video music and audio</p>
         </div>
 
     </section>
+</main>
+
+<footer>
+    <p>LearnHub - Fadi Abu Saleh — 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
