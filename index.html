@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- header area: title + short description + navigation -->
 <header>
     <h1>Our Courses</h1>
     <p>Browse and choose the course you want to learn.</p>
 
+    <!-- main navigation for the whole site -->
     <nav>
         <a href="index.html">Courses</a>
         <a href="gallery.html">Media</a>
@@ -21,8 +23,10 @@
     </nav>
 </header>
 
+<!-- main layout container (holy grail: left aside + main + right aside) -->
 <div class="container">
 
+    <!-- left sidebar with course categories -->
     <aside class="left-aside">
         <h3>Categories</h3>
         <ul>
@@ -33,20 +37,25 @@
         </ul>
     </aside>
 
+    <!-- main content area with all course cards -->
     <main>
         <h2>Available Courses</h2>
         <p>Select a course and apply to join.</p>
 
+        <!-- responsive grid for course cards -->
         <section class="course-grid">
 
+            <!-- single course card -->
             <article class="course-card" id="web">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" alt="">
                 <h4>Web Development Basics</h4>
                 <p>Learn HTML, CSS, and JavaScript from scratch.</p>
                 <p><strong>Price:</strong> $29</p>
+                <!-- button leading to the apply form -->
                 <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
+            <!-- single course card -->
             <article class="course-card" id="data">
                 <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="">
                 <h4>Data Science Intro</h4>
@@ -55,6 +64,7 @@
                 <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
+            <!-- single course card -->
             <article class="course-card" id="design">
                 <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60" alt="">
                 <h4>UI / UX Design</h4>
@@ -63,6 +73,7 @@
                 <a href="form.html" class="buy-btn">Buy Now</a>
             </article>
 
+            <!-- single course card -->
             <article class="course-card" id="ml">
                 <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=60" alt="">
                 <h4>Machine Learning 101</h4>
@@ -74,6 +85,7 @@
         </section>
     </main>
 
+    <!-- right sidebar with extra info -->
     <aside class="right-aside">
         <h3>Why Choose Us?</h3>
         <p>Practical lessons, real projects, and beginner‑friendly content.</p>
@@ -81,10 +93,11 @@
 
 </div>
 
+<!-- footer with credits -->
 <footer>
     <p>LearnHub - Fadi Abu Saleh — 2026</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply for a Course</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
+<!-- added class for layout styling on this page -->
 <body class="form-page">
 
+<!-- header with title + description + navigation -->
 <header>
     <h1>Apply to Buy a Course</h1>
     <p>Fill in your details and we’ll contact you soon.</p>
 
+    <!-- main navigation for the whole site -->
     <nav>
         <a href="index.html">Courses</a>
         <a href="gallery.html">Media</a>
@@ -21,29 +24,41 @@
     </nav>
 </header>
 
+<!-- main area: form on the left, output on the right -->
 <main>
 
+    <!-- user application form -->
     <form id="projectForm">
+
+        <!-- text input -->
         <label for="userName">Full Name:</label>
         <input type="text" id="userName" required>
 
+        <!-- email input -->
         <label for="userEmail">Email Address:</label>
         <input type="email" id="userEmail" required>
 
+        <!-- date input -->
         <label for="userDate">Date of Birth:</label>
         <input type="date" id="userDate">
 
+        <!-- number input -->
         <label for="userExperience">Years of Experience (1-10):</label>
         <input type="number" id="userExperience" min="1" max="10">
 
+        <!-- checkbox input -->
         <label for="userUpdates">Subscribe to updates?</label>
         <input type="checkbox" id="userUpdates">
 
+        <!-- submit button -->
         <button type="submit" id="submitBtn">Submit Application</button>
     </form>
 
+    <!-- area where the submitted data will appear -->
     <div id="displayArea">
         <h3>Your Submission:</h3>
+
+        <!-- default message before form is submitted -->
         <div id="formDataOutput">
             <p>No data submitted yet.</p>
         </div>
@@ -51,10 +66,11 @@
 
 </main>
 
+<!-- footer with credits -->
 <footer>
     <p>LearnHub - Fadi Abu Saleh — 2026</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Media</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- header with page title + description + navigation -->
 <header>
     <h1>Course Media</h1>
     <p>Preview images, videos, and audio from our courses.</p>
 
+    <!-- main navigation for the whole site -->
     <nav>
         <a href="index.html">Courses</a>
         <a href="gallery.html">Media</a>
@@ -21,52 +23,64 @@
     </nav>
 </header>
 
+<!-- main content area for all media previews -->
 <main>
+
+    <!-- grid container for all media items -->
     <section class="media-grid">
 
+        <!-- single media item: image -->
         <div class="media-item">
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60">
             <h3>Web Dev Preview</h3>
             <p>Intro image from the web dev course.</p>
         </div>
 
+        <!-- single media item: image -->
         <div class="media-item">
             <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg">
             <h3>Data Science Preview</h3>
             <p>Data tools and analysis basics.</p>
         </div>
 
+        <!-- single media item: image -->
         <div class="media-item">
             <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60">
             <h3>Design Preview</h3>
             <p>UI / UX sketches and layouts.</p>
         </div>
 
+        <!-- single media item: video -->
         <div class="media-item">
+            
             <video controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+                <source src="media\ml_video.mp4">
             </video>
             <h3>ML Video</h3>
             <p>Short intro video about machine learning.</p>
         </div>
 
+        <!-- single media item: audio -->
         <div class="media-item">
             <audio controls>
-                <source src="demo-music.mp3" type="audio/mpeg">
+                <source src="media/demo-music.mp3" type="audio/mpeg">
             </audio>
-            <h3>Music Sample clip</h3>
+            <h3>Music Sample Clip</h3>
             <p>Example audio clip used in lessons.</p>
-            <a href="https://pixabay.com/music/beats-vlog-hip-hop-483574/">link of the audio </a>
-            <p>from pixabay website to show all media stuff like video music and audio</p>
+
+            <!-- link to the audio source (optional extra info) -->
+            <a href="https://pixabay.com/music/beats-vlog-hip-hop-483574/">Link to the audio</a>
+            <p>From Pixabay — showing that the gallery supports images, video, and audio.</p>
         </div>
 
     </section>
 </main>
 
+<!-- footer with credits -->
 <footer>
     <p>LearnHub - Fadi Abu Saleh — 2026</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
